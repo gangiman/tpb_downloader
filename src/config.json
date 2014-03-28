@@ -1,0 +1,96 @@
+{
+    "trusted_release_groups": [
+        "VTV",
+        "eztv",
+        "Drarbg",
+        "TvTeam",
+        "ettv",
+        "DibyaTPB",
+        "KJFinster"
+    ],
+    "shows": {
+        "colbert report": {
+            "airs": "MON-THU",
+            "chosen_release": "480p",
+            "releases": {
+                "480p": {
+                    "release_lag": {
+                        "n": 0,
+                        "mean": null,
+                        "std": null
+                    }
+                },
+                "720p": {
+                    "release_lag": {}
+                }
+            },
+            "last_check": 0
+        },
+        "daily show": {
+            "airs": "MON-THU",
+            "chosen_release": "480p",
+            "releases": {
+                "480p": {
+                    "release_lag": {
+                        "n": 0,
+                        "mean": null,
+                        "std": null
+                    }
+                },
+                "720p": {
+                    "release_lag": {
+                        "n": 0,
+                        "mean": null,
+                        "std": null
+                    }
+                }
+            },
+            "last_check": 0
+        },
+        "craig ferguson": {
+            "airs": "MON-FRI",
+            "chosen_release": "720p",
+            "releases": {
+                "480p": {
+                    "release_lag": {
+                        "n": 0,
+                        "mean": null,
+                        "std": null
+                    }
+                },
+                "720p": {
+                    "release_lag": {
+                        "n": 0,
+                        "mean": null,
+                        "std": null
+                    }
+                }
+            },
+            "last_check": 0
+        },
+        "conan": {
+            "airs": "MON-THU",
+            "chosen_release": "720p",
+            "releases": {
+                "480p": {
+                    "release_lag": {
+                        "n": 0,
+                        "mean": null,
+                        "std": null
+                    }
+                },
+                "720p": {
+                    "release_lag": {
+                        "n": 0,
+                        "mean": null,
+                        "std": null
+                    }
+                }
+            },
+            "last_check": 0
+        }
+    },
+    "steps_in_variance": 20,
+    "steps_outside_variance": 40,
+    "outside_variance_period": 168800
+}

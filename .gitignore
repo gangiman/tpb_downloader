@@ -18,9 +18,14 @@ develop-eggs
 lib
 lib64
 __pycache__
+pyvenv.cfg
+share
 
 # Installer logs
 pip-log.txt
+
+#Logs
+*.log
 
 # Unit test / coverage reports
 .coverage
