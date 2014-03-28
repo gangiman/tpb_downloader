@@ -8,9 +8,14 @@ from time import sleep
 from itertools import chain
 from itertools import takewhile
 from operator import attrgetter
+import sys
 
-time_shift = 0
 
+if "--td" in sys.argv:
+    idx = sys.argv.index("--td")
+else:
+    idx = -1
+time_shift = int(sys.argv[idx + 1]) if idx != -1 else 0
 
 class datetime(_datetime):
 
@@ -164,8 +169,9 @@ def do_stuff(config, checkers, new_day=False):
             if next_moment is not None:
                 next_check.append(next_moment)
             else:
+                logger.info()
                 checkers.remove(iterator)
-    return min(next_check), results
+    return (next_check and min(next_check)), results
 
 
 def main(config, new_day=False):
@@ -176,6 +182,9 @@ def main(config, new_day=False):
         next_check_ts, results = do_stuff(config, checkers, new_day=new_day)
         if results:
             print("\n".join("{}, {}".format(t, t.magnet_link) for t in results))
+        if not next_check_ts:
+            print("Got all torrents. Exiting..")
+            exit(0)
         time_step = int(next_check_ts - datetime.now().timestamp() - 120)
         print(
             "next check will be at {}, waiting {} seconds".format(

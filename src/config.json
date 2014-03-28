@@ -6,7 +6,8 @@
         "TvTeam",
         "ettv",
         "DibyaTPB",
-        "KJFinster"
+        "KJFinster",
+        "tchernomush"
     ],
     "shows": {
         "colbert report": {
@@ -94,3 +95,4 @@
     "steps_outside_variance": 40,
     "outside_variance_period": 168800
 }
+
